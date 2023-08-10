@@ -33,14 +33,14 @@
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #333; /* Change this color */
-    color: white;
+    background-color: #fb8332; /* Change this color */
+    color: black;
     transition: left 0.3s ease-in-out, background-color 0.3s; /* Add background-color transition */
 }
 
 .slide-out-nav.active {
     left: 0;
-    background-color: #817070; /* Change this color */
+    background-color: #fb8332; /* Change this color */
 }
 
 .slide-out-nav ul {
@@ -55,7 +55,7 @@
 
 .slide-out-nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
@@ -1373,20 +1373,22 @@
         }
     
             .image img {
-                display: block;
-                width: 100%;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
             }
     
             .image fit {
-                width: 150px;
-                height: 150px;
+                width: 200px;
+                height: 200px;
                 border-radius: 50%;
             }
     
             .image.featured {
                 display: block;
-                width: 100%;
-                margin: 0 0 2em 0;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
             }
     
             .image.left {
@@ -1403,7 +1405,51 @@
                     margin: 0 auto;
                     width: auto;
                 }
+.container .button-5{
+    align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: 10px 25px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 30px;
+  height: 20px;
+}
 
+.container .button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.container .button-5:hover {
+    transform: translateY(-1px);
+}
+
+.container .button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+   transform: translateY(0);
+}
 .content {
     margin-left: 270px; /* Adjust this to match the width of the navigation */
     padding: 20px;
