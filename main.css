@@ -47,6 +47,7 @@
     font-size: 18px;
 }
 
+
 .user-name {
     position: fixed;
     top: 20px;
@@ -54,6 +55,20 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
+.user-name ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.user-name ul li{
+    float: left;
+    display: block;
+    padding: 8px;
+}
+
 
 .content {
     margin-left: 270px; /* Adjust this to match the width of the navigation */
