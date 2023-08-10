@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+   <!-- <style>
+        /* Your existing styles here */
+
+        .menu-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+
+        .slide-out-nav {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333; /* Change this color */
+            color: white;
+            transition: left 0.3s ease-in-out, background-color 0.3s; /* Add background-color transition */
+        }
+
+        .slide-out-nav.active {
+            left: 0;
+            background-color: #817070; /* Change this color */
+        }
+
+        .slide-out-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 100px 20px;
+        }
+
+        .slide-out-nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .slide-out-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .user-name {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 270px; /* Adjust this to match the width of the navigation */
+            padding: 20px;
+        }
+
+        
+    </style> -->
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav class="slide-out-nav" id="slideOutNav">
+        <ul>
+            <li><a href="#">User Info</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Watchlist</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Notifications</a></li>
+        </ul>
+    </nav>
+    <div>
+        
+        <p class="user-name">Sraboni Mahbub </p>
+    </div>
+    
+    <div class="content">
+        <!-- Your main content goes here -->
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var slideOutNav = document.getElementById("slideOutNav");
+            slideOutNav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
