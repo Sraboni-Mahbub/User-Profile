@@ -16,6 +16,11 @@
     margin: 5px 0;
 }
 
+.container-2 {
+	position: absolute;
+	margin-left: 25%;
+}
+
 .logout{
     list-style-type: none;
     margin-left: 20px;
@@ -1467,7 +1472,7 @@ body {
 	min-height: 100vh;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 0px;
 	background: white;
   }
   .container-2 {
