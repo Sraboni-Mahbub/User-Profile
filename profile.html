@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- <style>
         /* Your existing styles here */
 
         .menu-icon {
@@ -80,15 +81,16 @@
     </div>
     <nav class="slide-out-nav" id="slideOutNav">
         <ul>
-            <li><a href="#">User Info</a></li>
-            <li><a href="#">Favourites</a></li>
-            <li><a href="#">Watchlist</a></li>
-            <li><a href="#">Setting</a></li>
-            <li><a href="#">Notifications</a></li>
+            <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> User Info</a></li>
+            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> Favourites</a></li>
+            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Watchlist</a></li>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a></li>
+            <li><a href="#"><i class="fa-regular fa-bell" style="color: #000000;"></i>  Notifications</a></li>
         </ul>
         <div class="logout">
-            
-            <li>Logout</li>
+          <ul>
+            <li><a href="#" style="color: #000000;"><i class="fas fa-sign-out-alt fa-rotate-180 fa-lg" style="color: #000000;"></i>  Logout</a></li>
+          </ul>
         </div>
         
     </nav>
@@ -96,7 +98,7 @@
     
     <div class="user-name">
         <ul>
-            <li><i class="fa fa-bell" style="font-size:24px"></i></li>
+            <li><i class="fa-regular fa-bell fa-shake fa-xl"></i></li>
             <li class="avatar"><img src="picture.jpg"></li>
             <li>Sraboni Mahbub</li>
         </ul>
@@ -117,6 +119,36 @@
             </div>
         </div>
     </div>
+
+    <section class="container-2">
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Name</label>
+            <input type="text" placeholder="Enter full name" required />
+          </div>
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full name" required />
+          </div>
+          <div class="input-box">
+            <label>Email </label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>Number </label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>Location</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label>Postal code</label>
+            <input type="text" required />
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
     
     <script>
         function toggleMenu() {
