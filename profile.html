@@ -5,73 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <!-- <style>
-        /* Your existing styles here */
-
-        .menu-icon {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            cursor: pointer;
-            z-index: 999;
-        }
-
-        .bar {
-            width: 30px;
-            height: 3px;
-            background-color: #333;
-            margin: 5px 0;
-        }
-
-        .slide-out-nav {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #333; /* Change this color */
-            color: white;
-            transition: left 0.3s ease-in-out, background-color 0.3s; /* Add background-color transition */
-        }
-
-        .slide-out-nav.active {
-            left: 0;
-            background-color: #817070; /* Change this color */
-        }
-
-        .slide-out-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 100px 20px;
-        }
-
-        .slide-out-nav ul li {
-            margin-bottom: 20px;
-        }
-
-        .slide-out-nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
-
-        .user-name {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-        }
-
-        .content {
-            margin-left: 270px; /* Adjust this to match the width of the navigation */
-            padding: 20px;
-        }
-
-        
-    </style> -->
+    <style>
+      .btn {
+            background-color: #fa6400;
+            color: #fff;
+            transition: all .7s;
+          }
+          .btn:hover {
+            color: #ffffff;
+            background-color: #fa934e !important;
+            border-color: #fa6400;
+            box-shadow: #000000;
+          }
+    </style>
 </head>
 <body>
     <div class="menu-icon" onclick="toggleMenu()">
@@ -120,41 +69,55 @@
         </div>
     </div>
 
-    <section class="container-2">
-        <form action="#" class="form">
-          <div class="input-box">
-            <label>Name</label>
-            <input type="text" placeholder="Enter full name" required />
+      <form action="#">
+        <div></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col" >
+              <label>Name</label>
+              <input type="text" required />
+            </div>
+            <div class="col">
+              <label>Full Name</label>
+              <input type="text" />
+            </div>
           </div>
-          <div class="input-box">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter Full name" required />
+          <div class="row">
+            <div class="col">
+              <label>Email </label>
+              <input type="text" required />
+            </div>
+            <div class="col">
+              <label>Number </label>
+              <input type="text" required />
+            </div>
           </div>
-          <div class="input-box">
-            <label>Email </label>
-            <input type="text" required />
+          <div class="row">
+            <div class="col">
+              <label>Location </label>
+              <input type="text" required />
+            </div>
+            <div class="col">
+              <label>Postal code </label>
+              <input type="text" required />
+            </div>
           </div>
-          <div class="input-box">
-            <label>Number </label>
-            <input type="text" required />
+          <div class="row">
+            <div class="col">
+              
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
           </div>
-          <div class="input-box">
-            <label>Location</label>
-            <input type="text" required />
-          </div>
-          <div class="input-box">
-            <label>Postal code</label>
-            <input type="text" required />
-          </div>
-          <button>Submit</button>
-        </form>
-      </section>
-    
+        </div>
+      </form>
     <script>
         function toggleMenu() {
             var slideOutNav = document.getElementById("slideOutNav");
             slideOutNav.classList.toggle("active");
         }
     </script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
